@@ -1200,7 +1200,7 @@
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKaSURBVEhLnVZL
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKaSURBVEhLnVZL
         axNRFJ4sbO4d25W4sE2bmZvgA3GVlTRzJ9SVCzeCKYIuXAlWFLEg+k90IyIqBXHhG3Qn/obuxMdWfMQH
         1mji9905CYbOq/3gQO453/nO3DvnnomXB93s1HRgr6jAPtGh/QD7CfsOW1fGPvVDu0KO0MtDN+y8DqK7
         EPoDGxZYX4XRDX9+cVbS84EnXkbSN0newPoOfWqhbbxWa4cXdFS1udRArKtNfM9xEm7PD+NjIpMObaJL
@@ -1215,10 +1215,10 @@
         6lxtvNIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_barra_inferior.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        cwAAAHMBY8FD/gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACNSURBVDhP7c5N
+        cAAAAHABznhikwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACNSURBVDhP7c5N
         CoMwEIbhnKA/uCmI4AnqVV31HF270K3a1m5KKVbQm9R3QgKBUM0B/OBZZJhviNqic0WFo36F5YAShTw6
         /HBHyBEpt5DOSwYnvM3giQj/skcD2R2RQifkiJRreGWbpSNueYJXtonRQxYfyHDGzcwGJFiMe8T1xWrZ
         Rr5/wcfIscMWL0rNv9MoD6WUZ9kAAAAASUVORK5CYII=
@@ -1226,6 +1226,9 @@
   </data>
   <metadata name="hora.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>259, 17</value>
+  </metadata>
+  <metadata name="timer_barra_inferior.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>337, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>56</value>

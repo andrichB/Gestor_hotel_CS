@@ -39,16 +39,19 @@
             btn_editar_user = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
             timer_btn_usuarios = new System.Windows.Forms.Timer(components);
-            panel1 = new Panel();
+            pnl_barra_inferior = new Panel();
             pictureBox2 = new PictureBox();
             lbl_hora = new Label();
-            button1 = new Button();
+            btn_barra_inferior = new Button();
             hora = new System.Windows.Forms.Timer(components);
+            panel2 = new Panel();
+            timer_barra_inferior = new System.Windows.Forms.Timer(components);
             pnl_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             sub_pnl_botones.SuspendLayout();
-            panel1.SuspendLayout();
+            pnl_barra_inferior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // pnl_menu
@@ -170,21 +173,21 @@
             timer_btn_usuarios.Interval = 1;
             timer_btn_usuarios.Tick += timer_btn_usuarios_Tick;
             // 
-            // panel1
+            // pnl_barra_inferior
             // 
-            panel1.BackColor = Color.FromArgb(200, 209, 166);
-            panel1.Controls.Add(pictureBox2);
-            panel1.Controls.Add(lbl_hora);
-            panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(200, 618);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(984, 93);
-            panel1.TabIndex = 2;
+            pnl_barra_inferior.BackColor = Color.FromArgb(200, 209, 166);
+            pnl_barra_inferior.Controls.Add(pictureBox2);
+            pnl_barra_inferior.Controls.Add(lbl_hora);
+            pnl_barra_inferior.Dock = DockStyle.Bottom;
+            pnl_barra_inferior.Location = new Point(200, 611);
+            pnl_barra_inferior.Name = "pnl_barra_inferior";
+            pnl_barra_inferior.Size = new Size(984, 100);
+            pnl_barra_inferior.TabIndex = 2;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(25, 19);
+            pictureBox2.Location = new Point(9, 8);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(24, 27);
             pictureBox2.TabIndex = 1;
@@ -195,36 +198,51 @@
             lbl_hora.AutoSize = true;
             lbl_hora.Font = new Font("Poppins Medium", 10.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_hora.ForeColor = Color.FromArgb(9, 33, 62);
-            lbl_hora.Location = new Point(55, 19);
+            lbl_hora.Location = new Point(39, 10);
             lbl_hora.Name = "lbl_hora";
             lbl_hora.Size = new Size(74, 25);
             lbl_hora.TabIndex = 0;
             lbl_hora.Text = "--:--:--";
             // 
-            // button1
+            // btn_barra_inferior
             // 
-            button1.BackColor = Color.FromArgb(200, 209, 166);
-            button1.FlatAppearance.BorderColor = Color.FromArgb(200, 209, 166);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(200, 598);
-            button1.Name = "button1";
-            button1.Size = new Size(25, 23);
-            button1.TabIndex = 4;
-            button1.UseVisualStyleBackColor = false;
+            btn_barra_inferior.BackColor = Color.FromArgb(200, 209, 166);
+            btn_barra_inferior.FlatAppearance.BorderColor = Color.FromArgb(200, 209, 166);
+            btn_barra_inferior.FlatAppearance.BorderSize = 0;
+            btn_barra_inferior.FlatStyle = FlatStyle.Flat;
+            btn_barra_inferior.Image = (Image)resources.GetObject("btn_barra_inferior.Image");
+            btn_barra_inferior.Location = new Point(0, -4);
+            btn_barra_inferior.Name = "btn_barra_inferior";
+            btn_barra_inferior.Size = new Size(25, 23);
+            btn_barra_inferior.TabIndex = 4;
+            btn_barra_inferior.UseVisualStyleBackColor = false;
+            btn_barra_inferior.Click += btn_barra_inferior_Click;
             // 
             // hora
             // 
             hora.Tick += hora_Tick;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(btn_barra_inferior);
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(200, 591);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(984, 20);
+            panel2.TabIndex = 5;
+            // 
+            // timer_barra_inferior
+            // 
+            timer_barra_inferior.Interval = 1;
+            timer_barra_inferior.Tick += timer_barra_inferior_Tick;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1184, 711);
-            Controls.Add(button1);
-            Controls.Add(panel1);
+            Controls.Add(panel2);
+            Controls.Add(pnl_barra_inferior);
             Controls.Add(pnl_menu);
             Name = "Form1";
             Text = "Form1";
@@ -232,9 +250,10 @@
             pnl_menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             sub_pnl_botones.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            pnl_barra_inferior.ResumeLayout(false);
+            pnl_barra_inferior.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -249,10 +268,12 @@
         private Button btn_eliminar_user;
         private Button btn_editar_user;
         private System.Windows.Forms.Timer timer_btn_usuarios;
-        private Panel panel1;
+        private Panel pnl_barra_inferior;
         private PictureBox pictureBox2;
         private Label lbl_hora;
-        private Button button1;
+        private Button btn_barra_inferior;
         private System.Windows.Forms.Timer hora;
+        private Panel panel2;
+        private System.Windows.Forms.Timer timer_barra_inferior;
     }
 }

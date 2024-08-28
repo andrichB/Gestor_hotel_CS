@@ -2,7 +2,7 @@ namespace Gestor_hotel_CS
 {
     public partial class Form1 : Form
     {
-        bool bandera_menu, bandera_submenu;
+        bool bandera_menu, bandera_submenu, bandera_barra_inferior = true;
         public Form1()
         {
             InitializeComponent();
@@ -100,6 +100,34 @@ namespace Gestor_hotel_CS
         private void hora_Tick(object sender, EventArgs e)
         {
             lbl_hora.Text = DateTime.Now.ToString("hh:mm:ss");
+        }
+
+        private void timer_barra_inferior_Tick(object sender, EventArgs e)
+        {
+
+            if (bandera_barra_inferior)
+            {
+                pnl_barra_inferior.Height -= 10;
+                if (pnl_barra_inferior.Height <= 40)
+                {
+                    bandera_barra_inferior = false;
+                    timer_barra_inferior.Stop();
+                }
+            }
+            else
+            {
+                pnl_barra_inferior.Height += 10;
+                if (pnl_barra_inferior.Height >= 100)
+                {
+                    bandera_barra_inferior = true;
+                    timer_barra_inferior.Stop();
+                }
+            }
+        }
+
+        private void btn_barra_inferior_Click(object sender, EventArgs e)
+        {
+            timer_barra_inferior.Start();
         }
     }
 }
