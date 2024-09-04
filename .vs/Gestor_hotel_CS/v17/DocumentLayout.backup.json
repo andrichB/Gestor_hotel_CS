@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\andri\\source\\repos\\Gestor_hotel_CS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA91F5A6-4D19-49F3-80B8-69EDD1219AC5}|Gestor_hotel_CS\\Gestor_hotel_CS.csproj|c:\\users\\andri\\source\\repos\\gestor_hotel_cs\\gestor_hotel_cs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA91F5A6-4D19-49F3-80B8-69EDD1219AC5}|Gestor_hotel_CS\\Gestor_hotel_CS.csproj|solutionrelative:gestor_hotel_cs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA91F5A6-4D19-49F3-80B8-69EDD1219AC5}|Gestor_hotel_CS\\Gestor_hotel_CS.csproj|c:\\users\\andri\\source\\repos\\gestor_hotel_cs\\gestor_hotel_cs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA91F5A6-4D19-49F3-80B8-69EDD1219AC5}|Gestor_hotel_CS\\Gestor_hotel_CS.csproj|solutionrelative:gestor_hotel_cs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA91F5A6-4D19-49F3-80B8-69EDD1219AC5}|Gestor_hotel_CS\\Gestor_hotel_CS.csproj|C:\\Users\\andri\\source\\repos\\Gestor_hotel_CS\\gestor_hotel_cs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EA91F5A6-4D19-49F3-80B8-69EDD1219AC5}|Gestor_hotel_CS\\Gestor_hotel_CS.csproj|solutionrelative:gestor_hotel_cs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EA91F5A6-4D19-49F3-80B8-69EDD1219AC5}|Gestor_hotel_CS\\Gestor_hotel_CS.csproj|c:\\users\\andri\\source\\repos\\gestor_hotel_cs\\gestor_hotel_cs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA91F5A6-4D19-49F3-80B8-69EDD1219AC5}|Gestor_hotel_CS\\Gestor_hotel_CS.csproj|solutionrelative:gestor_hotel_cs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA91F5A6-4D19-49F3-80B8-69EDD1219AC5}|Gestor_hotel_CS\\Gestor_hotel_CS.csproj|c:\\users\\andri\\source\\repos\\gestor_hotel_cs\\gestor_hotel_cs\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,11 +22,19 @@
       "DocumentGroups": [
         {
           "DockedHeight": 261,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\andri\\source\\repos\\Gestor_hotel_CS\\Gestor_hotel_CS\\Form1.cs",
+              "RelativeDocumentMoniker": "Gestor_hotel_CS\\Form1.cs",
+              "ToolTip": "C:\\Users\\andri\\source\\repos\\Gestor_hotel_CS\\Gestor_hotel_CS\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gestor_hotel_CS\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T21:00:47.023Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -34,8 +42,8 @@
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\andri\\source\\repos\\Gestor_hotel_CS\\Gestor_hotel_CS\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Gestor_hotel_CS\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\andri\\source\\repos\\Gestor_hotel_CS\\Gestor_hotel_CS\\Form1.Designer.cs*",
-              "RelativeToolTip": "Gestor_hotel_CS\\Form1.Designer.cs*",
+              "ToolTip": "C:\\Users\\andri\\source\\repos\\Gestor_hotel_CS\\Gestor_hotel_CS\\Form1.Designer.cs",
+              "RelativeToolTip": "Gestor_hotel_CS\\Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-28T04:06:01.823Z",
@@ -43,28 +51,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\andri\\source\\repos\\Gestor_hotel_CS\\Gestor_hotel_CS\\Form1.cs",
               "RelativeDocumentMoniker": "Gestor_hotel_CS\\Form1.cs",
-              "ToolTip": "C:\\Users\\andri\\source\\repos\\Gestor_hotel_CS\\Gestor_hotel_CS\\Form1.cs*",
-              "RelativeToolTip": "Gestor_hotel_CS\\Form1.cs*",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAMwIEAAAApAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\andri\\source\\repos\\Gestor_hotel_CS\\Gestor_hotel_CS\\Form1.cs",
+              "RelativeToolTip": "Gestor_hotel_CS\\Form1.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAiwHcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T22:00:06.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T22:00:06.318Z"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\andri\\source\\repos\\Gestor_hotel_CS\\Gestor_hotel_CS\\Form1.cs",
-              "RelativeDocumentMoniker": "Gestor_hotel_CS\\Form1.cs",
-              "ToolTip": "C:\\Users\\andri\\source\\repos\\Gestor_hotel_CS\\Gestor_hotel_CS\\Form1.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "Gestor_hotel_CS\\Form1.cs [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T17:29:07.426Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         },
