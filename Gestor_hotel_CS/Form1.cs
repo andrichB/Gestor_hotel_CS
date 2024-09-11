@@ -2,7 +2,7 @@ namespace Gestor_hotel_CS
 {
     public partial class Form1 : Form
     {
-        bool bandera_menu,bandera_barra_inferior = true;
+        bool bandera_menu, bandera_barra_inferior = true;
         //banderas de timers de animacion
         //sub_menu usuario, sub_menu_reporte, sub_menu_facturas
         bool[] banderas = new bool[] { false, false, false };
@@ -174,5 +174,25 @@ namespace Gestor_hotel_CS
         {
             timer_btn_factura.Start();
         }
+
+        private void btn_agregra_persona_Click(object sender, EventArgs e)
+        {
+            abrir_panel_hijo(new Form2());
+        }
+
+        private Form current_form  = null;
+
+        private void abrir_panel_hijo(Form form_hijo)
+        {
+            current_form = form_hijo;
+            form_hijo.TopLevel = false;
+            form_hijo.FormBorderStyle = FormBorderStyle.None;
+            form_hijo.Dock = DockStyle.Fill;
+            pnl_main.Controls.Add(form_hijo);
+            pnl_main.Tag = pnl_main;
+            form_hijo.BringToFront();
+            form_hijo.Show();
+        }
     }
 }
+

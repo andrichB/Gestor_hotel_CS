@@ -16,3 +16,4 @@ C:\Users\andri\source\repos\Gestor_hotel_CS\Gestor_hotel_CS\obj\Debug\net8.0-win
 C:\Users\andri\source\repos\Gestor_hotel_CS\Gestor_hotel_CS\obj\Debug\net8.0-windows\Gestor_hotel_CS.genruntimeconfig.cache
 C:\Users\andri\source\repos\Gestor_hotel_CS\Gestor_hotel_CS\obj\Debug\net8.0-windows\ref\Gestor_hotel_CS.dll
 C:\Users\andri\source\repos\Gestor_hotel_CS\Gestor_hotel_CS\obj\Debug\net8.0-windows\Gestor_hotel_CS.Properties.Resources.resources
+C:\Users\andri\source\repos\Gestor_hotel_CS\Gestor_hotel_CS\obj\Debug\net8.0-windows\Gestor_hotel_CS.Form2.resources

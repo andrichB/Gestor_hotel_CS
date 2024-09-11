@@ -149,6 +149,7 @@
             btn_agregra_persona.Text = "Agregar persona";
             btn_agregra_persona.TextAlign = ContentAlignment.MiddleRight;
             btn_agregra_persona.UseVisualStyleBackColor = true;
+            btn_agregra_persona.Click += btn_agregra_persona_Click;
             // 
             // btn_registrar_cliente
             // 
@@ -363,7 +364,7 @@
             // 
             // timer_btn_usuarios
             // 
-            timer_btn_usuarios.Interval = 1;
+            timer_btn_usuarios.Interval = 10;
             timer_btn_usuarios.Tick += timer_btn_usuarios_Tick;
             // 
             // pnl_barra_inferior
@@ -453,7 +454,7 @@
             pictureBox4.Image = Properties.Resources.Mesa_de_trabajo_2;
             pictureBox4.Location = new Point(200, 210);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(625, 242);
+            pictureBox4.Size = new Size(625, 216);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 1;
             pictureBox4.TabStop = false;
