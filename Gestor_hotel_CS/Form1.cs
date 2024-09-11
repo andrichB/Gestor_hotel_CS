@@ -2,7 +2,11 @@ namespace Gestor_hotel_CS
 {
     public partial class Form1 : Form
     {
-        bool bandera_menu, bandera_submenu, bandera_barra_inferior = true;
+        bool bandera_menu,bandera_barra_inferior = true;
+        //banderas de timers de animacion
+        //sub_menu usuario, sub_menu_reporte, sub_menu_facturas
+        bool[] banderas = new bool[] { false, false, false };
+        int contador = 10;
         public Form1()
         {
             InitializeComponent();
@@ -13,7 +17,11 @@ namespace Gestor_hotel_CS
         {
             weidhtPnlAuto();
             sub_pnl_botones.Visible = false;
+            sub_pnl_reportes.Visible = false;
+            sub_pnl_factura.Visible = false;
             sub_pnl_botones.Height = 0;
+            sub_pnl_reportes.Height = 0;
+            sub_pnl_factura.Height = 0;
             hora.Start();
         }
 
@@ -61,42 +69,6 @@ namespace Gestor_hotel_CS
             }
         }
 
-        private void btn_user_Click(object sender, EventArgs e)
-        {
-            timer_btn_usuarios.Start();
-
-        }
-
-        private void timer_btn_usuarios_Tick(object sender, EventArgs e)
-        {
-
-            if (sub_pnl_botones.Visible && sub_pnl_botones.Height >= 170)
-            {
-                bandera_submenu = sub_pnl_botones.Visible;
-            }
-
-            if (bandera_submenu)
-            {
-                sub_pnl_botones.Height -= 10;
-                if (sub_pnl_botones.Height <= 10)
-                {
-                    bandera_submenu = false;
-                    sub_pnl_botones.Visible = false;
-                    timer_btn_usuarios.Stop();
-                }
-            }
-            else
-            {
-                sub_pnl_botones.Visible = true;
-                sub_pnl_botones.Height += 10;
-                if (sub_pnl_botones.Height >= 170)
-                {
-                    bandera_submenu = true;
-                    timer_btn_usuarios.Stop();
-                }
-            }
-        }
-
         private void hora_Tick(object sender, EventArgs e)
         {
             lbl_hora.Text = DateTime.Now.ToString("hh:mm:ss");
@@ -128,6 +100,79 @@ namespace Gestor_hotel_CS
         private void btn_barra_inferior_Click(object sender, EventArgs e)
         {
             timer_barra_inferior.Start();
+        }
+
+        private void pnl_menu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        /*
+        *   Esta shit me ha hecho plantearme si es que sufro de alguna deficiencia mental, porque 
+        *   estuve 6 horas tratando de que funcionara
+        *   Esto se encarga de hacer la lógica para posteriormente hacer la animacion de despliegue
+        *   y repliegue de los submenus
+        */
+        private void animacion_sub_menu(FlowLayoutPanel sub_pnl, bool[] bandera, int posicion, System.Windows.Forms.Timer tiempo)
+        {
+
+            if (sub_pnl.Visible && sub_pnl.Height >= 170)
+            {
+                bandera[posicion] = true;
+            }
+
+            if (bandera[posicion])
+            {
+                sub_pnl.Height -= 10;
+
+                if (sub_pnl.Height <= 10)
+                {
+                    bandera[posicion] = false;
+                    sub_pnl.Visible = false;
+                    tiempo.Stop();
+
+                }
+            }
+            else
+            {
+                sub_pnl.Visible = true;
+                sub_pnl.Height += 10;
+
+                if (sub_pnl.Height >= 170)
+                {
+                    bandera[posicion] = true;
+                    tiempo.Stop();
+                }
+            }
+        }
+
+        //Timers de animacion de los sub menus
+        private void timer_btn_usuarios_Tick(object sender, EventArgs e)
+        {
+            animacion_sub_menu(sub_pnl_botones, banderas, 0, timer_btn_usuarios);
+        }
+
+        private void timer_btn_reportes_Tick(object sender, EventArgs e)
+        {
+            animacion_sub_menu(sub_pnl_reportes, banderas, 1, timer_btn_reportes);
+        }
+        private void timer_btn_factura_Tick(object sender, EventArgs e)
+        {
+            animacion_sub_menu(sub_pnl_factura, banderas, 2, timer_btn_factura);
+        }
+
+        //Botones para activar los timers
+        private void btn_user_Click(object sender, EventArgs e)
+        {
+            timer_btn_usuarios.Start();
+        }
+        private void btn_reportes_Click(object sender, EventArgs e)
+        {
+            timer_btn_reportes.Start();
+        }
+
+        private void btn_factura_Click(object sender, EventArgs e)
+        {
+            timer_btn_factura.Start();
         }
     }
 }
